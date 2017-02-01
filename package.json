@@ -1,47 +1,71 @@
 {
-  "name": "draft-js-autocomplete-plugin-creator",
-  "version": "0.2.0",
-  "description": "AutoComplete Plugin Creator for Draft JS Plugins",
+  "_args": [
+    [
+      {
+        "raw": "draft-js-autocomplete-plugin-creator@git+https://github.com/mjrussell/draft-js-autocomplete-plugin-creator.git#master",
+        "scope": null,
+        "escapedName": "draft-js-autocomplete-plugin-creator",
+        "name": "draft-js-autocomplete-plugin-creator",
+        "rawSpec": "git+https://github.com/mjrussell/draft-js-autocomplete-plugin-creator.git#master",
+        "spec": "git+https://github.com/mjrussell/draft-js-autocomplete-plugin-creator.git#master",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:mjrussell/draft-js-autocomplete-plugin-creator.git#master",
+          "sshUrl": "git+ssh://git@github.com/mjrussell/draft-js-autocomplete-plugin-creator.git#master",
+          "httpsUrl": "git+https://github.com/mjrussell/draft-js-autocomplete-plugin-creator.git#master",
+          "gitUrl": "git://github.com/mjrussell/draft-js-autocomplete-plugin-creator.git#master",
+          "shortcut": "github:mjrussell/draft-js-autocomplete-plugin-creator#master",
+          "directUrl": "https://raw.githubusercontent.com/mjrussell/draft-js-autocomplete-plugin-creator/master/package.json"
+        }
+      },
+      "/Users/sudheer/tek/tekion_cdms_web"
+    ]
+  ],
+  "_from": "git+https://github.com/mjrussell/draft-js-autocomplete-plugin-creator.git#master",
+  "_id": "draft-js-autocomplete-plugin-creator@0.2.0",
+  "_inCache": true,
+  "_location": "/draft-js-autocomplete-plugin-creator",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "draft-js-autocomplete-plugin-creator@git+https://github.com/mjrussell/draft-js-autocomplete-plugin-creator.git#master",
+    "scope": null,
+    "escapedName": "draft-js-autocomplete-plugin-creator",
+    "name": "draft-js-autocomplete-plugin-creator",
+    "rawSpec": "git+https://github.com/mjrussell/draft-js-autocomplete-plugin-creator.git#master",
+    "spec": "git+https://github.com/mjrussell/draft-js-autocomplete-plugin-creator.git#master",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:mjrussell/draft-js-autocomplete-plugin-creator.git#master",
+      "sshUrl": "git+ssh://git@github.com/mjrussell/draft-js-autocomplete-plugin-creator.git#master",
+      "httpsUrl": "git+https://github.com/mjrussell/draft-js-autocomplete-plugin-creator.git#master",
+      "gitUrl": "git://github.com/mjrussell/draft-js-autocomplete-plugin-creator.git#master",
+      "shortcut": "github:mjrussell/draft-js-autocomplete-plugin-creator#master",
+      "directUrl": "https://raw.githubusercontent.com/mjrussell/draft-js-autocomplete-plugin-creator/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/mjrussell/draft-js-autocomplete-plugin-creator.git#108189e68f3f9ffdaae40b7ef7f5a3e2fcd84dea",
+  "_shasum": "290aad31f298eaabaf3cf5cefe6cceb29c5ef2ef",
+  "_shrinkwrap": null,
+  "_spec": "draft-js-autocomplete-plugin-creator@git+https://github.com/mjrussell/draft-js-autocomplete-plugin-creator.git#master",
+  "_where": "/Users/sudheer/tek/tekion_cdms_web",
   "author": {
     "name": "Matt Russell",
     "email": "matthewjosephrussell@gmail.com"
   },
-  "files": [
-    "*.md",
-    "LICENSE",
-    "lib",
-    "src"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mjrussell/draft-js-autocomplete-plugin-creator.git"
+  "bugs": {
+    "url": "https://github.com/mjrussell/draft-js-autocomplete-plugin-creator/issues"
   },
-  "main": "lib/index.js",
-  "keywords": [
-    "draft-js-plugins",
-    "draft",
-    "react",
-    "components",
-    "react-component"
-  ],
-  "peerDependencies": {
-    "draft-js": ">=0.9.1",
-    "immutable": ">=3.7.6",
-    "react": ">=0.14.0 || 15.0.0-rc",
-    "react-dom": ">=0.14.0 || 15.0.0-rc"
-  },
-  "scripts": {
-    "clean": "./node_modules/.bin/rimraf lib",
-    "build": "npm run clean && npm run build:js",
-    "build:js": "WEBPACK_CONFIG=$(pwd)/webpack.config.js BABEL_DISABLE_CACHE=1 BABEL_ENV=production NODE_ENV=production ./node_modules/.bin/babel --out-dir='lib' --ignore='__test__/*' src",
-    "prepublish": "npm run build"
-  },
-  "license": "MIT",
   "dependencies": {
     "decorate-component-with-props": "^1.0.2",
     "find-with-regex": "^1.0.2",
     "union-class-names": "^1.0.0"
   },
+  "description": "AutoComplete Plugin Creator for Draft JS Plugins",
   "devDependencies": {
     "babel-cli": "^6.8.0",
     "babel-core": "^6.8.0",
@@ -52,5 +76,43 @@
     "babel-preset-stage-0": "^6.5.0",
     "rimraf": "^2.5.2",
     "webpack": "^1.13.1"
-  }
+  },
+  "files": [
+    "*.md",
+    "LICENSE",
+    "lib",
+    "src"
+  ],
+  "gitHead": "108189e68f3f9ffdaae40b7ef7f5a3e2fcd84dea",
+  "homepage": "https://github.com/mjrussell/draft-js-autocomplete-plugin-creator#readme",
+  "keywords": [
+    "draft-js-plugins",
+    "draft",
+    "react",
+    "components",
+    "react-component"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "draft-js-autocomplete-plugin-creator",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "draft-js": ">=0.9.1",
+    "immutable": ">=3.7.6",
+    "react": ">=0.14.0 || 15.0.0-rc",
+    "react-dom": ">=0.14.0 || 15.0.0-rc"
+  },
+  "readme": "# DraftJS AutoComplete Plugin Creator\r\n\r\n[![npm](https://img.shields.io/npm/v/draft-js-autocomplete-plugin-creator.svg)](https://www.npmjs.com/package/draft-js-autocomplete-plugin-creator)\r\n\r\nThe goal of this plugin creator to is to make developing custom autocompletion plugins for \r\n[draft-js-plugins](https://github.com/draft-js-plugins/draft-js-plugins) easier and consolidate common\r\nlogic internal to the completion logic. Much of the original logic comes from the [Mention Plugin](https://github.com/draft-js-plugins/draft-js-plugins/tree/master/draft-js-mention-plugin).\r\n\r\n### API\r\n\r\nAPI documentation is in progress, for now please see the examples.\r\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjrussell/draft-js-autocomplete-plugin-creator.git"
+  },
+  "scripts": {
+    "build": "npm run clean && npm run build:js",
+    "build:js": "WEBPACK_CONFIG=$(pwd)/webpack.config.js BABEL_DISABLE_CACHE=1 BABEL_ENV=production NODE_ENV=production ./node_modules/.bin/babel --out-dir='lib' --ignore='__test__/*' src",
+    "clean": "rimraf lib",
+    "prepublish": "npm run build"
+  },
+  "version": "0.2.0"
 }

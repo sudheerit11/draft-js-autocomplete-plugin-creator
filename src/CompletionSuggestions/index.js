@@ -196,7 +196,8 @@ export default function (addModifier, Entry, suggestionsThemeKey) {
         completion,
         this.props.entityMutability,
       );
-      this.props.store.setEditorState(newEditorState);
+     // this.props.store.setEditorState(newEditorState);
+      this.props.onSelection(newEditorState, completion);
     };
 
     onCompletionFocus = (index) => {
@@ -210,7 +211,7 @@ export default function (addModifier, Entry, suggestionsThemeKey) {
 
     commitSelection = () => {
       this.onCompletionSelect(this.props.suggestions.get(this.state.focusedOptionIndex));
-      return true;
+      return "handled";
     };
 
     openDropdown = () => {
@@ -223,7 +224,6 @@ export default function (addModifier, Entry, suggestionsThemeKey) {
       this.props.callbacks.onEscape = this.onEscape;
       this.props.callbacks.handleReturn = this.commitSelection;
       this.props.callbacks.onTab = this.onTab;
-
       const descendant = `completion-option-${this.key}-${this.state.focusedOptionIndex}`;
       this.props.ariaProps.ariaActiveDescendantID = descendant;
       this.props.ariaProps.ariaOwneeID = `completions-list-${this.key}`;
